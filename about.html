@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris's Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d5a4f7, #f8e8ff);
+        }
+        header {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5d5d5d;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #a455cc;
+            border-radius: 5px;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to top, #ffffff, #f8e8ff);
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .about-section h2 {
+            color: #a455cc;
+            font-size: 28px;
+        }
+        .about-section blockquote {
+            font-style: italic;
+            color: #666;
+            margin: 15px 0;
+        }
+        .about-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #a455cc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            margin-top: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .about-section img:hover {
+            transform: scale(1.1); /* Zoom effect */
+            box-shadow: 0 8px 16px rgba(164, 85, 204, 0.8); /* Glowing border effect */
+        }
+        .info {
+            background-color: #a455cc;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px auto;
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Audio Player Section */
+        .audio-player {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .audio-player audio {
+            margin: 10px 0;
+            outline: none;
+        }
+        .audio-player p {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>FARIS'S WEBSITE</h1>
+        <p>DIPLOMA IN INFORMATION MANAGEMENT</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#" class="active">About Me</a>
+        <a href="myfamily.html">My Family</a>
+        <a href="educationexperience.html">Education & Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Me</h2>
+        <blockquote>"Alhamdulillah for what has been left, and for what is yet to come."</blockquote>
+        <img src="Pic/MeProfile.jpg" alt="My Picture">
+        <div class="info">
+            <p>My name is Muhamad Faris Aiman Bin Mohamad Rosli. This year, 2024, I'm 20 years old. I live in Ketereh, Kota Bharu, Kelantan. I am a semester 5 student in diploma in information management at UiTM Kelantan, Machang campus. I’m passionate about website, creative design, and software development. Other than that, I also like to spend my free time playing soccer in the field.</p>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section class="about-section">
+        <div class="audio-player">
+            <audio controls>
+                <source src="Sound/Song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>My Favourite Song: Story of My Life by One Direction</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Riss. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+

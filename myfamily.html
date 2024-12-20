@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris's Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d5a4f7, #f8e8ff);
+        }
+        header {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5d5d5d;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #a455cc;
+            border-radius: 5px;
+        }
+
+        /* Family Section */
+        .family-section {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to top, #ffffff, #f8e8ff);
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .family-section h2, .grid-section h3 {
+            color: #a455cc;
+            font-size: 28px;
+        }
+        .family-section p {
+            color: #666;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        .family-section .main-photo {
+            width: 70%;
+            margin: 20px auto;
+            border-radius: 15px;
+            border: 5px solid #a455cc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .family-section .main-photo:hover {
+            transform: scale(1.05) rotate(2deg); /* Scale and slight rotation */
+            box-shadow: 0 8px 16px rgba(164, 85, 204, 0.8); /* Glow effect */
+        }
+
+        /* Table Styles */
+        .family-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .family-table th, .family-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .family-table th {
+            background-color: #a455cc;
+            color: white;
+        }
+        .family-table tr:nth-child(even) {
+            background-color: #f8e8ff;
+        }
+        .family-table img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .family-table img:hover {
+            transform: scale(1.1) rotate(5deg); /* Bounce and rotate */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Glow effect */
+        }
+
+        /* Grid Section */
+        .grid-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .grid-section h3 {
+            margin-bottom: 20px;
+        }
+        .grid-section .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .grid-section .grid .box {
+            background-color: #d5f3ff;
+            border: 2px solid #a4e1ff;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .grid-section .grid .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .grid-section .grid .box:hover img {
+            transform: scale(1.1); /* Zoom in */
+        }
+        .grid-section .grid .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .audio-player {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .audio-player audio {
+            margin: 10px 0;
+            outline: none;
+        }
+        .audio-player p {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FARIS'S WEBSITE</h1>
+        <p>DIPLOMA IN INFORMATION MANAGEMENT</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="#" class="active">My Family</a>
+        <a href="educationexperience.html">Education & Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="family-section">
+        <h2>My Family</h2>
+        <p>My family consists of 8 people including my mother and father. My siblings consist of 4 boys and 2 girls. I am the first child, I have 3 younger brothers and 2 younger sisters.</p>
+        <img src="Pic/MainFamily1.jpg" alt="Main family photo" class="main-photo">
+
+        <h3>Family Members</h3>
+        <table class="family-table">
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Relationship</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td><img src="Pic/Abah.jpg" alt="Mohamad Rosli"></td>
+                <td>Mohamad Rosli</td>
+                <td>My Dad</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Mama.jpg" alt="Che Sharipah"></td>
+                <td>Che Sharipah</td>
+                <td>My Mom</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Me.jpg" alt="Muhamad Faris Aiman"></td>
+                <td>Muhamad Faris Aiman</td>
+                <td>Myself</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Mairah.jpg" alt="Nur Ain Umairah"></td>
+                <td>Nur Ain Umairah</td>
+                <td>Sister</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Adam.jpg" alt="Muhammad Adam Aiman"></td>
+                <td>Muhammad Adam Aiman</td>
+                <td>Brother</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Lisa.jpg" alt="Nur Ain Qalesya"></td>
+                <td>Nur Ain Qalesya</td>
+                <td>Sister</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Firash.jpg" alt="Muhammad Firash Aiman"></td>
+                <td>Muhammad Firash Aiman</td>
+                <td>Brother</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td><img src="Pic/Rayyan.jpg" alt="Muhammad Rayyan Aiman"></td>
+                <td>Muhammad Rayyan Aiman</td>
+                <td>Brother</td>
+                <td>3</td>
+            </tr>
+            <!-- Add other family members similarly -->
+        </table>
+    </section>
+
+    <section class="grid-section">
+        <h3>My Second Family</h3>
+        <p>Besides my main family, I also have my second family who are always with me, brighten my day, and are always there when I need them. They are my friends.</p>
+        <div class="grid">
+            <div class="box"><img src="Pic/friends1.jpg" alt="Friend 1"></div>
+            <div class="box"><img src="Pic/friends2.jpg" alt="Friend 2"></div>
+            <div class="box"><img src="Pic/friends3.jpg" alt="Friend 3"></div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="audio-player">
+            <audio controls autoplay>
+                <source src="Sound/motivation.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+         </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Riss. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+
+

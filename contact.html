@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris's Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d5a4f7, #f8e8ff);
+        }
+        header {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5d5d5d;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #a455cc;
+            border-radius: 5px;
+        }
+        .section-title {
+            text-align: center;
+            color: #a455cc;
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        .contact-container {
+            background-color: #a455cc;
+            color: white;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .contact-container ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .contact-container ul li {
+            margin: 10px 0;
+        }
+        .contact-form {
+            background-color: #d5a4f7;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #5d5d5d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #a455cc;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .social-media div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #5d5d5d;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FARIS'S WEBSITE</h1>
+        <p>DIPLOMA IN INFORMATION MANAGEMENT</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="myfamily.html">My Family</a>
+        <a href="educationexperience.html">Education & Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <h2 class="section-title">CONTACT INFORMATION</h2>
+    <div class="contact-container">
+        <h3>Reach Out to Me on:</h3>
+        <ul>
+            <li><strong>Phone:</strong> +60 10-201 3832</li>
+            <li><strong>Email:</strong> farisaimann2004@gmail.com</li>
+            <li><strong>Address:</strong> Lot 615, Kampung Machang, 16100 Kota Bharu, Kelantan.</li>
+        </ul>
+
+        <div class="contact-form">
+            <h3>Send Me a Message:</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <h2 class="section-title">SOCIAL MEDIA</h2>
+    <div class="social-media">
+        <a href="https://wa.me/60102013832" target="_blank" style="text-decoration: none;">
+            <div><img src="Pic/ws.jpeg" alt="WhatsApp"> WhatsApp: +60 102013832</div>
+        </a>
+        <a href="https://www.instagram.com/frsaimnrsli.__" target="_blank" style="text-decoration: none;">
+            <div><img src="Pic/instagram.jpeg" alt="Instagram"> Instagram: @frsaimnrsli.__</div>
+        </a>
+        <a href="https://www.tiktok.com/@frsaimnrsli._" target="_blank" style="text-decoration: none;">
+            <div><img src="Pic/tiktok.jpeg" alt="TikTok"> TikTok: @frsaimnrsli._</div>
+        </a>
+        <a href="https://www.facebook.com/share/1EAxAWkoiv/?mibextid=wwXIfr" target="_blank" style="text-decoration: none;">
+            <div><img src="Pic/facebook.jpeg" alt="Facebook"> Facebook: Faris Aiman Rosli</div>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 Riss. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

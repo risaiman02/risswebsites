@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris's Website - Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d5a4f7, #f8e8ff);
+        }
+        header {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5d5d5d;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #a455cc;
+            border-radius: 5px;
+        }
+        .section-title {
+            text-align: center;
+            color: white;
+            background-color: #a455cc;
+            font-size: 28px;
+            padding: 10px 0;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            border: 3px solid #a455cc;
+        }
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .gallery-item video {
+            max-height: 200px;
+        }
+        footer {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FARIS'S WEBSITE</h1>
+        <p>DIPLOMA IN INFORMATION MANAGEMENT</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="myfamily.html">My Family</a>
+        <a href="educationexperience.html">Education & Experience</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2 class="section-title">Welcome to my Gallery</h2>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="Pic/MamaAbahOld.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="Pic/myself5.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="Pic/friends4.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/friendsvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/nana.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/internvid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/myselfvid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/familyvid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop>
+                <source src="Vid/myselfvid5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Riss. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+

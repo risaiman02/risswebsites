@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris's Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d5a4f7, #f8e8ff);
+        }
+        header {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5d5d5d;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #a455cc;
+            border-radius: 5px;
+        }
+        .section-title {
+            text-align: center;
+            color: #a455cc;
+            font-size: 28px;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .education-container {
+            background-color: #a455cc;
+            color: white;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+        .school-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #d5a4f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .school-logo {
+            flex: 0 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .school-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            animation: imageZoom 1.5s ease-in-out infinite alternate;
+        }
+        .school-details {
+            flex: 1;
+        }
+        .school-details h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        .school-details p {
+            margin: 5px 0;
+            font-size: 16px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .school-details ul {
+            list-style: disc;
+            margin: 5px 20px;
+            padding: 0;
+            font-size: 16px;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+        .experience-container {
+            background-color: #a455cc;
+            color: white;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1.2s ease-in-out;
+        }
+        .experience-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+        .experience-container li {
+            margin: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .audio-player {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            background-color: #a455cc;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes imageZoom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FARIS'S WEBSITE</h1>
+        <p>DIPLOMA IN INFORMATION MANAGEMENT</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="myfamily.html">My Family</a>
+        <a href="educationexperience.html" class="active">Education & Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2 class="section-title">EDUCATION</h2>
+    <div class="education-container">
+        <!-- Add school items here -->
+        <div class="school-item">
+        <div class="school-logo">
+            <img src="Pic/sklogo.jpeg" alt="SK Kedai Piah Logo">
+        </div>
+        <div class="school-details">
+            <h3>SK KEDAI PIAH</h3>
+            <p><strong>Year:</strong> 2011 - 2016</p>
+            <ul>
+                <li><strong>Achievements:</strong></li>
+                <ul>
+                    <li>UPSR (2016): 2A 4B</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="school-item">
+        <div class="school-logo">
+            <img src="Pic/mmllogo.png" alt="Maahad Muhammadi Lelaki Logo">
+        </div>
+        <div class="school-details">
+            <h3>MAAHAD MUHAMMADI LELAKI</h3>
+            <p><strong>Year:</strong> 2017 - 2021</p>
+            <ul>
+                <li><strong>Achievements:</strong></li>
+                <ul>
+                    <li>PT3 (2019): 5A 3B 2C</li>
+                    <li>SPM (2021): 3A 3B 3C</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="school-item">
+        <div class="school-logo">
+            <img src="Pic/uitmlogo2.png" alt="UiTM Machang Logo">
+        </div>
+        <div class="school-details">
+            <h3>UiTM Machang</h3>
+            <p><strong>Program:</strong> Diploma in Information Management</p>
+            <p><strong>Year:</strong> 2022 - 2025</p>
+            <ul>
+                <li><strong>Achievements:</strong></li>
+                <ul>
+                    <li>Current GPA: 3.35</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <h2 class="section-title">EXPERIENCE</h2>
+    <div class="experience-container">
+        <!-- Add experience items here -->
+            <ol type="I">
+                <li>Had undergone industrial training at the Pejabat Agama Pasir Puteh for two months</li>
+                <li>Learned basics in programming during the diploma era</li>
+                <li>Worked part-time after SPM at a restaurant</li>
+                <li>Represented the faculty as an athlete in football in "Sukan Antara Fakulti"</li>
+                <li>Learned about library management</li>
+            </0l>
+        </div>
+    </div>
+
+    <div class="audio-player">
+        <audio controls>
+            <source src="Sound/Song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <footer>
+        &copy; 2024 Riss. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
